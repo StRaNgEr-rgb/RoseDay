@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌹 Happy Rose Day, Isha! 🌹</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600&family=Noto+Sans+Devanagari:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Falling Rose Petals Container -->
+    <div class="petals-container" id="petals"></div>
+
+    <!-- Floating Hearts -->
+    <div class="hearts-container" id="hearts"></div>
+
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loading">
+        <div class="loading-rose">🌹</div>
+        <p class="loading-text">Loading your surprise...</p>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main-content" id="main">
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
+            <div class="hero-roses">
+                <span class="floating-rose r1">🌹</span>
+                <span class="floating-rose r2">🌹</span>
+                <span class="floating-rose r3">🌹</span>
+                <span class="floating-rose r4">🌹</span>
+                <span class="floating-rose r5">🌹</span>
+            </div>
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="title-line">Happy</span>
+                    <span class="title-line rose-text">Rose Day</span>
+                    <span class="title-line name-line">My Dear <span class="highlight">Isha</span></span>
+                </h1>
+                <div class="rose-divider">
+                    <span>🌹</span>
+                    <span>💕</span>
+                    <span>🌹</span>
+                </div>
+                <p class="hero-subtitle">From your Vardhan, with all my love 💖</p>
+                <button class="scroll-btn" onclick="scrollToSection('message')">
+                    <span>Explore Your Gift</span>
+                    <div class="arrow-down">↓</div>
+                </button>
+            </div>
+            <div class="hero-glow"></div>
+        </section>
+
+        <!-- Message Section -->
+        <section class="message-section" id="message">
+            <div class="section-container">
+                <h2 class="section-title">
+                    <span class="rose-icon">🌹</span>
+                    A Rose For You
+                    <span class="rose-icon">🌹</span>
+                </h2>
+                <div class="message-card">
+                    <div class="card-glow"></div>
+                    <div class="rose-bloom">
+                        <div class="rose-3d">
+                            <div class="petal p1"></div>
+                            <div class="petal p2"></div>
+                            <div class="petal p3"></div>
+                            <div class="petal p4"></div>
+                            <div class="petal p5"></div>
+                            <div class="rose-center"></div>
+                        </div>
+                    </div>
+                    <p class="message-text">
+                        Ab hum sirf dost kehte hain khud ko,
+                        par dil ne kabhi hisaab lagana seekha hi nahi.
+                        Jo pyaar kabhi tha, woh kahin gaya nahi,
+                        bas thoda shaant ho gaya hai… gehra ho gaya hai.
+
+                        Main maanta hoon cheezein badal gayi hain,
+                        raaste alag ho gaye hain shayad.
+                        Par jo respect, care aur pyaar dil mein hai,
+                        woh aaj bhi utna hi sachha hai.
+
+                        Yeh rose kisi expectation ke saath nahi,
+                        na kisi jawaab ki umeed ke saath.
+                        Bas ek ehsaas hai—
+                        ki tum meri zindagi ka ek khoobsurat hissa ho,
+                        aur shayad hamesha rahoge.
+                        <span class="heart-emoji">💖</span>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Shayari Section -->
+        <section class="shayari-section" id="shayari">
+            <div class="section-container">
+                <h2 class="section-title hindi-title">
+                    <span class="rose-icon">🌹</span>
+                    दिल से शायरी
+                    <span class="rose-icon">🌹</span>
+                </h2>
+                <div class="shayari-cards">
+                    <div class="shayari-card">
+                        <div class="shayari-glow"></div>
+                        <p class="shayari-text">
+                            Tumhari khamoshi bhi mujhe baatein sikha jaati hai,<br>
+                            Har adhoori si raat ko poori kahaani bana jaati hai.<br>
+                            Main tumhe roz chahta hoon, bina kisi wajah ke,<br>
+                            Bas yahi mohabbat hai… jo har roz nayi ho jaati hai. 🌹
+                        </p>
+                    </div>
+                    <div class="shayari-card">
+                        <div class="shayari-glow"></div>
+                        <p class="shayari-text">
+                            Tumhari ek nazar kaafi hoti hai,<br>
+                            Dil ke saare shor ko chup karaane ke liye.<br>
+                            Main ishq ko samajhne nikla tha kabhi,<br>
+                            Aur pata hi nahi chala… kab tum meri aadat ban gayi. 💕
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Rose Gallery -->
+        <section class="gallery-section" id="gallery">
+            <div class="section-container">
+                <h2 class="section-title">
+                    <span class="rose-icon">🌹</span>
+                    Roses of Love
+                    <span class="rose-icon">🌹</span>
+                </h2>
+                <div class="rose-gallery">
+                    <div class="gallery-item" data-meaning="Red Rose - I Love You">
+                        <div class="rose-emoji">🌹</div>
+                        <p>Red Rose</p>
+                        <span class="rose-meaning">Deep Love & Romance</span>
+                    </div>
+                    <div class="gallery-item" data-meaning="Pink Rose - Grace & Gratitude">
+                        <div class="rose-emoji pink">🌷</div>
+                        <p>Pink Rose</p>
+                        <span class="rose-meaning">Grace & Gratitude</span>
+                    </div>
+                    <div class="gallery-item" data-meaning="White Rose - Pure Love">
+                        <div class="rose-emoji white">🤍</div>
+                        <p>White Rose</p>
+                        <span class="rose-meaning">Pure & Eternal Love</span>
+                    </div>
+                    <div class="gallery-item" data-meaning="Yellow Rose - Friendship">
+                        <div class="rose-emoji yellow">💛</div>
+                        <p>Yellow Rose</p>
+                        <span class="rose-meaning">Joy & Friendship</span>
+                    </div>
+                </div>
+                <p class="gallery-note">Each rose represents a different shade of my love for you, Isha! 💖</p>
+            </div>
+        </section>
+
+        <!-- Promise Section -->
+        <section class="promise-section" id="promise">
+            <div class="section-container">
+                <h2 class="section-title">
+                    <span class="rose-icon">🌹</span>
+                    My Promises
+                    <span class="rose-icon">🌹</span>
+                </h2>
+                <div class="promise-list">
+                    <div class="promise-item">
+                        <span class="promise-icon">💕</span>
+                        <p>To love you more with each passing day</p>
+                    </div>
+                    <div class="promise-item">
+                        <span class="promise-icon">🌹</span>
+                        <p>To be your strength in every storm</p>
+                    </div>
+                    <div class="promise-item">
+                        <span class="promise-icon">💖</span>
+                        <p>To make you smile every single day</p>
+                    </div>
+                    <div class="promise-item">
+                        <span class="promise-icon">✨</span>
+                        <p>To cherish every moment we share together</p>
+                    </div>
+                    <div class="promise-item">
+                        <span class="promise-icon">🌹</span>
+                        <p>To be yours, today, tomorrow, and forever</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final Message -->
+        <section class="final-section" id="final">
+            <div class="section-container">
+                <div class="final-content">
+                    <div class="big-rose-container">
+                        <div class="big-rose">🌹</div>
+                        <div class="rose-sparkles">
+                            <span class="sparkle s1">✨</span>
+                            <span class="sparkle s2">💫</span>
+                            <span class="sparkle s3">✨</span>
+                            <span class="sparkle s4">💫</span>
+                        </div>
+                    </div>
+                    <h2 class="final-title">Happy Rose Day, <span class="highlight">Isha!</span></h2>
+                    <p class="final-message">
+                        You are my rose, my love, my everything.<br>
+                        May our love bloom forever like the most beautiful rose garden. 🌹💕
+                    </p>
+                    <div class="final-signature">
+                        <p>With All My Love,</p>
+                        <p class="signature-name">Vardhan</p>
+                        <p class="date">7th February 2026</p>
+                    </div>
+                    <div class="heart-beat">💖</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Background Music - Twinkling Ambient -->
+    <audio id="bgMusic" loop>
+        <source src="https://assets.mixkit.co/music/preview/mixkit-sleepy-cat-135.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Music Toggle -->
+    <button class="music-toggle" id="musicToggle" title="Toggle Music">
+        <span class="music-icon">🎵</span>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
